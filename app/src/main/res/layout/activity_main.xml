@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/milayout"
+    >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et"
+    />
+
+    <Button
+        android:layout_below="@id/et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton"
+        android:enabled="false"
+        android:onClick="alista"
+        android:text="Añadir"
+        android:background="@drawable/fondopersonal"
+
+        />
+
+    <ListView
+
+        android:layout_below="@id/boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lista"
+        android:background="#b9b97e"
+        >
+
+
+    </ListView>
+</RelativeLayout>
